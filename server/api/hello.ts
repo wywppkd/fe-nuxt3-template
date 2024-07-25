@@ -1,7 +1,7 @@
-let counter = 0
+let counter = 0;
 
 export default defineEventHandler((_event) => {
-  counter++
+  counter++;
 
   return {
     code: 200,
@@ -9,5 +9,5 @@ export default defineEventHandler((_event) => {
       hello: 'world',
       counter,
     },
-  }
-})
+  };
+});

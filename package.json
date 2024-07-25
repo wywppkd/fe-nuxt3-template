@@ -7,7 +7,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "prepare": "husky install",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "prettier": "prettier --write"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,vue}": "npm run lint",
+    "**/*.{js,jsx,tsx,ts,vue,md,json}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
@@ -23,6 +32,8 @@
     "element-plus": "^2.7.7",
     "eslint": "9.6.0",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "8.0.3",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
     "sass": "^1.77.8"
   }

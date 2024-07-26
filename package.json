@@ -3,13 +3,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --dotenv .env.dev",
+    "dev:test": "nuxt dev --dotenv .env.test",
+    "build:dev": "nuxt build --dotenv .env.dev",
+    "build:test": "nuxt build --dotenv .env.test",
+    "build:prod": "nuxt build --dotenv .env.prod",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "prepare": "husky install",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue",
+    "lint": "eslint",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,vue,md,json}'"
   },
   "lint-staged": {

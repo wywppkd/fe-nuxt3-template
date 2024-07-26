@@ -29,4 +29,9 @@ export default defineNuxtConfig({
       // stylistic: true // 改用 prettier 统一风格
     },
   },
+  runtimeConfig: {
+    public: {
+      NUXT_ENV: process.env.NUXT_ENV,
+    },
+  },
 });

@@ -17,10 +17,19 @@ const count = ref(0);
 const res = await getUserInfo();
 console.log('🚀 ~ file: index.vue:14 ~ res:', res);
 
+const viteEnv = getViteEnv();
+console.log('🚀 ~ file: index.vue:31 ~ onMounted ~ viteEnv:', viteEnv);
+
 // 客户端加载
 onMounted(async () => {
   const res = await getUserInfo();
   console.log('🚀 ~ file: index.vue:19 ~ onMounted ~ res:', res);
+
+  const NUXT_PUBLIC_BASE_URL = process.env.NUXT_PUBLIC_BASE_URL;
+  console.log('🚀 ~ file: index.vue:26 ~ onMounted ~ NUXT_PUBLIC_BASE_URL:', NUXT_PUBLIC_BASE_URL);
+
+  const viteEnv = getViteEnv();
+  console.log('🚀 ~ file: index.vue:32 ~ onMounted ~ viteEnv:', viteEnv);
 });
 </script>
 

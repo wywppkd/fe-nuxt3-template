@@ -60,7 +60,7 @@ export const request = async (url: Pararams[0], options: Pararams[1]): Promise<a
                 navigateTo({
                   path: '/exception',
                   query: {
-                    code: code,
+                    statusCode: code,
                     message: errmsg,
                   },
                 });
@@ -82,7 +82,7 @@ export const request = async (url: Pararams[0], options: Pararams[1]): Promise<a
             navigateTo({
               path: '/exception',
               query: {
-                code: status,
+                statusCode: status,
                 message: errmsg,
               },
             }),

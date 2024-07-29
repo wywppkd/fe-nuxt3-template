@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "normalize.css": "^8.0.1",
     "nuxt": "^3.12.4",
     "nuxt-proxy": "^0.4.1",
     "pinia": "^2.1.7",

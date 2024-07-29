@@ -4,6 +4,7 @@ import { options } from '#build/eslint.config.mjs';
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  css: ['normalize.css'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -13,9 +14,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  build: {
-    // transpile: 'pinia-plugin-persistedstate',
-  },
+  build: {},
   modules: [
     '@element-plus/nuxt',
     '@nuxt/eslint',

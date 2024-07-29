@@ -24,12 +24,6 @@ console.log('🚀 ~ file: index.vue:31 ~ onMounted ~ viteEnv:', viteEnv);
 onMounted(async () => {
   const res = await getUserInfo();
   console.log('🚀 ~ file: index.vue:19 ~ onMounted ~ res:', res);
-
-  const NUXT_PUBLIC_BASE_URL = process.env.NUXT_PUBLIC_BASE_URL;
-  console.log('🚀 ~ file: index.vue:26 ~ onMounted ~ NUXT_PUBLIC_BASE_URL:', NUXT_PUBLIC_BASE_URL);
-
-  const viteEnv = getViteEnv();
-  console.log('🚀 ~ file: index.vue:32 ~ onMounted ~ viteEnv:', viteEnv);
 });
 </script>
 

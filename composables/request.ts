@@ -23,9 +23,12 @@ type Pararams = Parameters<typeof useFetch>;
 export const request = async (url: Pararams[0], options: Pararams[1]): Promise<any> => {
   const nuxtApp = useNuxtApp();
   const { token } = useTokenStore();
+  const isClient = import.meta.client;
+  const runtimeConfig = useRuntimeConfig();
+
   return new Promise((resolve, reject) => {
     useFetch(url, {
-      baseURL: 'http://rap2api.taobao.org/app/mock/230933/staff/v1',
+      baseURL: isClient ? '/api' : runtimeConfig.public.NUXT_PUBLIC_API_URL,
       onRequest({ request, options }) {
         if (token) {
           options.headers = {

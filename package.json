@@ -13,7 +13,7 @@
     "prepare": "husky install",
     "postinstall": "nuxt prepare",
     "lint": "eslint",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,vue,md,json}'"
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,vue,md,json,css,scss,less}'"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,vue}": "npm run lint",

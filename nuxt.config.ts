@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     'nuxt-proxy',
+    '@nuxtjs/tailwindcss',
   ],
   elementPlus: {
     // 配置项: https://nuxt.com/modules/element-plus#options
@@ -60,4 +61,5 @@ export default defineNuxtConfig({
       },
     },
   },
+  tailwindcss: {},
 });

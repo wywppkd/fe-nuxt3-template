@@ -1,7 +1,8 @@
 <template>
   <div>
     <div @click="count++">hello {{ count }}</div>
-    <div>token: {{ token }}</div>
+    <div class="lg">token: {{ token }}</div>
+    <div class="text-lg bg-white text-red-700">123</div>
   </div>
 </template>
 

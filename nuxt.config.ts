@@ -61,5 +61,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  tailwindcss: {},
+  tailwindcss: {
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'last' }],
+  },
 });

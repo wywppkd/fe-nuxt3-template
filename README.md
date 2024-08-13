@@ -9,6 +9,7 @@
 - [x] 引入全局样式文件
 - [x] 引入 ellement-plus
 - [x] 引入 normalize.css
+- [x] 配置 tailwindcss
 
 ```bash
 pnpm install # 推荐使用 pnpm@9, 尝试用 yarn 会出现 eslint 不生效的问题
